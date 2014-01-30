@@ -2,25 +2,30 @@
 <html>
     <head>
         <title>AngularJS</title>
-            <meta charset="utf-8"/>
-        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+        <meta charset="utf-8"/>
+        <link rel="shortcut icon" href="css/images/favicon.ico">
+        <link href="css/style.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="content">
             <header>
                 <nav>
-                    <h2>Brooke Frandsen</h2>
                     <ul>
+                        <a href="index.html"><li>Brooke Frandsen</li></a>|
                         <a href="index.html"><li>Angular JS</li></a>
                         <a href="aboutme.html"><li>About Brooke</li></a>
                     </ul>
                 </nav>
             </header>
             <section>
-                <h1>AngularJS</h1>
-                <h2>HTML for Web Apps</h2>
+                <div class="backgroundimage">
+                    <h1>AngularJS</h1>
+                    <h2>&lt;HTML for Web Apps&gt;</h2>
+                </div>
                 <section>
-                <h3>What is Angular JS?</h3>
+                <h3 class="arrow">What is Angular JS?</h3>
+                    <img id="angularLogo" alt="angular" src="css/images/angularlogo.png"/>
                     <p>AngularJS is a framework created to assist in creating applications within a browser (can it do more?). The goal of the creators was to make development and testing easier. Using two-way binding, the view and model are kept in synchronization. 
 
                      The framework is easy enough. A developer (perhaps the smart, front-end guy) first marks up an html document with angular tags that correspond to the data that requires dynamicy. The data for the page is provided in the form of a JSON object. Simply stated, the values within the object update the angular tags within the html, making the page dynamic. 
@@ -104,7 +109,7 @@
 
                         <p>Here are some popular directives:</p>
 
-                        <ul>
+                        <ul class="directives">
                             <li>ng-app 
                                 <span>
                                     Designates the root element of the angular application.
@@ -157,23 +162,24 @@
                             </li>
                         </ul>
 
-                    <p>Each directive has a specific purpose. If you're already writing in angular, it's worth researching directives for common jquery functions such as autocomplete, mouseovers, and input.</p>
+                    <p>Each directive has a specific purpose. If you're already writing in angular, it's worth researching directives for common jQuery functions such as autocomplete, mouseovers, and input.</p>
                 </section>
                 <section>
                     <h3>Resources</h3>
                     <p>There's more! Athough Angular is fairly new, the API is neat and easy to use. Each directive is explained in more detail and has associated examples. In fact, Angular had it's first tech conference (ng-conf) this year. Videos from the conference are posted on the <a href="http://angularjs.org/">Angular.org</a> website. Check out some of the awesome resources below to learn more.</p>
                     <ul>
-                        <li>htts://egghead.io/</li>
-                        <li>http://en.wikipedia.org/wiki/AngularJS</li>
-                        <li>http://angularjs.org/</li>
+                        <li><a href="https://egghead.io/">https://egghead.io/</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/AngularJS">http://en.wikipedia.org/wiki/AngularJS</a></li>
+                        <li><a href="http://angularjs.org/">http://angularjs.org/</a></li>
                     </ul>
                 </section>
             </section>
             <footer>
-                <div class="subscribe">
+<!--                 <div class="subscribe">
                     <input type="email">
-                    <div class="button">Subscribe me!</div>
-                </div>
+                    <div class="button">Subscribe</div>
+                </div> -->
+                <p>&copy; 4ourthChild &nbsp;|&nbsp;  Brooke Frandsen  &nbsp;|&nbsp;  brookefrandsen@gmail.com</p>
             </footer>
         </div>    
     </body>
