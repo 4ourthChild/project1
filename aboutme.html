@@ -6,7 +6,6 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
         <script src="js/App.js"></script>
-        <script src="js/Utility.js"></script>
         <script src="js/Modal.js"></script>           
     </head>
     <body>
@@ -63,13 +62,20 @@
                         <li>Writing</li>
                     </ul>
             </section>
-            <div class="overlay">
-                <div id="modal">
+            <div id="dialogbox">
+                <div class="overlay">
+                    <div id="modal">
+                    </div>
                 </div>
             </div>
             <footer id="footer">
             </footer>
         </div>
         <script src="js/main.js"></script>
+        <script>
+            window.onload = function () {
+               document.title = "About Brooke!";
+            };
+        </script>
     </body>
 </html>
