@@ -198,3 +198,35 @@ footer p {
 	text-align:center;
 	font-size:75%;
 }
+
+#modal {
+    position:absolute;
+    width:300px;
+    height:200px;
+    z-index:15;
+    top:50%;
+    left:50%;
+    margin:-100px 0 0 -150px;
+    background:white;
+    border:2px solid;
+	border-radius:5px;
+}
+
+#modal p {
+	margin:10%;
+}
+
+#modal input {
+	margin:10%;
+	width:20%;
+	height:50px;
+}
+
+.overlay {
+  z-index: 999;
+  background-color: rgba(51, 51, 51, 0.4);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}

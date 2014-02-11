@@ -29,6 +29,15 @@ App.prototype = {
         var footerInfo = document.getElementById('footer');
         footerInfo.innerHTML = footer;
 
+    },
+
+    // Create HTML Modal 
+    createmodal: function () {
+        var modalContainer = document.getElementById('modal');
+
+        var modalHTML = "<p>Your session is about to expire. Would you like to extend your session?</p><input value='Yes' type='button'/><input value='No' type='button'/>";
+        modalContainer.innerHTML = modalHTML;
+
     }
 }
 
