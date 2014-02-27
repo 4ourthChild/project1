@@ -6,7 +6,8 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
         <script src="js/App.js"></script>
-        <script src="js/Modal.js"></script>           
+        <script src="js/Modal.js"></script>   
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>        
     </head>
     <body>
 
@@ -22,9 +23,9 @@
             <section>
                 <h3>A Nut in a Nutshell</h3>    
 
-                <figure>
+                <figure class="dark">
                     <img src="css/images/me.jpg" />
-                    <!-- <figcaption>Caption</figcaption> -->
+                    <figcaption>Click the photo to see Brooke's bad side...</figcaption> 
                 </figure>
                 <div id="bio">
                     <p>Brooke loves the web and hopes to continue her education and professional life in that sphere. Currently, she works part-time as a web developer for the Church of Jesus Christ of Latter-day Saints in Riverton, UT. Brooke began her adventure in web development in high school, where basic HTML and Adobe Dreamweaver were taught. She enjoyed creating things and contributing to the world through basic tags, images, and lines of code. Unaware of her future destiny with technology, Brooke began her schooling at Brigham Young University as an English Major. Once she realized the impracticality and endless papers associated with English, Brooke saught out a variety of explorative classes such as Computer Science, Film, Information Technology, and Communications.</p>
@@ -62,7 +63,7 @@
                         <li>Writing</li>
                     </ul>
             </section>
-            <div id="dialogbox">
+            <div id="dialogbox" style="display:none">
                 <div class="overlay">
                     <div id="modal">
                     </div>
@@ -75,6 +76,10 @@
         <script>
             window.onload = function () {
                document.title = "About Brooke!";
+
+               $(".dark").click(function (){
+                    $(".dark").html("<img src='css/images/dark.jpg'/>")
+               });
             };
         </script>
     </body>

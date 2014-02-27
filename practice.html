@@ -1,0 +1,17 @@
+<html>
+<body>
+	<div id="no"></div>
+	<textarea id="mytext"></textarea>
+	<div id="button">Subscribe me!</div>
+	<script>
+		var myDiv = document.getElementById('button');
+		myDiv.addEventListener('click', function() {
+			var no = document.getElementById('no');
+			var newDiv = document.createElement('div');
+			var text = document.getElementById("mytext").value;
+			newDiv.innerText = text;
+			no.appendChild(newDiv);
+		});
+	</script>
+</body>
+</html>
